@@ -15,7 +15,7 @@
     <!-- Slick slider -->
     <link href="{{ url_for('static',filename='css/slick.css') }}" rel="stylesheet">
     <!-- Theme color -->
-    <link id="switcher" href="{{ url_for('static',filename='css/theme-color/default-theme.css') }}" rel="stylesheet">
+    <link id="switcher" href="{{ url_for('static',filename='css/theme-color/lite-blue-theme.css') }}" rel="stylesheet">
 
     <!-- Main Style -->
     <link href="{{ url_for('static',filename='style.css') }}" rel="stylesheet">
@@ -53,7 +53,7 @@
 			      </button>
 
 			      <!-- Logo -->
-			      <a class="navbar-brand" href="index.html">Eventoz</a>
+			      <a class="navbar-brand" href="index.html">.hack();</a>
 
 			    </div>
 
@@ -63,7 +63,6 @@
 			      		<li><a href="#mu-hero">Home</a></li>
 				        <li><a href="#mu-about">About Us</a></li>
 				        <li><a href="#mu-schedule">Schedule</a></li>
-			            <li><a href="#mu-speakers">Speakers</a></li>
 			            <li><a href="#mu-pricing">Register</a></li>
 			            <li><a href="#mu-sponsors">Sponsors</a></li>
 			            <li><a href="#mu-contact">Contact</a></li>
@@ -92,7 +91,7 @@
 
 							<h1>student.hack();</h1>
 							<h2>A 24 hour open hackathon - for students, by students!</h2>
-							<p class="mu-event-date-line">February 1, 10:30 AM at Mar Athanasius College Of Engineering, Kothamangalam</p>
+							<p class="mu-event-date-line">February 1, 9:00 AM at Mar Athanasius College Of Engineering, Kothamangalam</p>
 
 							<div class="mu-event-counter-area">
 								<div id="mu-event-counter">
@@ -120,9 +119,9 @@
 						<div class="mu-about-area">
 							<!-- Start Feature Content -->
 							<div class="row">
-								<div class="col-md-6">
+								<div class="col-md-5">
 									<div class="mu-about-left">
-										<img class="" src="assets/images/about.jpg" alt="Men Speaker">
+										<img class="" src="{{ url_for('static', filename='images/logo.jpg') }}">
 									</div>
 								</div>
 								<div class="col-md-6">
@@ -145,7 +144,7 @@
 		</section>
 		<!-- End About -->
 
-		
+
 
 		<!-- Start Schedule  -->
 		<section id="mu-schedule">
@@ -180,26 +179,26 @@
 								    		</li>
 								    		<li>
 								    			<div class="mu-single-event">
-								    				
+
 								    				<p class="mu-event-time">10.00 AM</p>
 								    				<h3>Hack begins!</h3>
-								    				
+
 								    			</div>
 								    		</li>
 								    		<li>
 								    			<div class="mu-single-event">
-								    				
+
 								    				<p class="mu-event-time">12:30 PM</p>
 								    				<h3>Lunch begins</h3>
-								    				
+
 								    			</div>
 								    		</li>
 								    		<li>
 								    			<div class="mu-single-event">
-								    				
+
 								    				<p class="mu-event-time">4:00 PM</p>
 								    				<h3>Tea break</h3>
-								    				
+
 								    			</div>
 								    		</li>
 								    		<li>
@@ -220,23 +219,23 @@
 								    		</li>
 								    		<li>
 								    			<div class="mu-single-event">
-								    				
+
 								    				<p class="mu-event-time">10.00 AM</p>
 								    				<h3>Hack ends!</h3>
-								    				
+
 								    			</div>
 								    		</li>
 								    		<li>
 								    			<div class="mu-single-event">
-								    				
+
 								    				<p class="mu-event-time">10.30 AM</p>
 								    				<h3>Presentations Begin</h3>
-								    				
+
 								    			</div>
 								    		</li>
 								    		<li>
 								    			<div class="mu-single-event">
-								    				
+
 								    				<p class="mu-event-time">12.00 PM</p>
 								    				<h3>Lunch</h3>
 								    				<
@@ -263,7 +262,7 @@
 
 
 
-    
+
 		<!-- Start Venue -->
 		<section id="mu-venue">
 			<div class="mu-venue-area">
@@ -297,13 +296,30 @@
 
 							<div class="mu-title-area">
 								<h2 class="mu-title">Register Now</h2>
-								<p>We haven't opened the registrations yet! </p>
 							</div>
+              <!-- single price item -->
+									<div class="col-md-auto">
+										<div class="mu-single-price">
+
+											<div class="mu-single-price-head">
+												<span class="mu-currency"></span>
+												<span class="mu-rate"></span>
+												<span class="mu-time"></span>
+											</div>
+											<h3 class="mu-price-title">We haven't opened the registrations yet!</h3>
+											<!---<ul>
+												<li>Basic Class Ticket</li>
+												<li>Access to all sessions</li>
+												<li>Free Breakfast</li>
+											</ul>
+											<a class="mu-register-btn" href="#"> Register Now</a>
+										</div>
+									</div>--->
 
 							<div class="mu-pricing-conten">
 								<div class="row">
 
-									
+
 								</div>
 							</div>
 
@@ -318,7 +334,7 @@
 		<section id="mu-faq">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-12">
+					<div class="col-md-auto">
 						<div class="mu-faq-area">
 
 							<div class="mu-title-area">
@@ -385,12 +401,12 @@
 							          </div>
 							          <div id="collapseFour" class="panel-collapse collapse">
 							            <div class="panel-body">
-							             The presentation in front of the judges is the deciding moment for your project, to win the prize. You'll have 5 minutes in total, 3 minutes for presenting the pitch deck and 2 minutes for the demo. Make sure you prepare the pitch beforehand so that you can rock the stage!			
+							             The presentation in front of the judges is the deciding moment for your project, to win the prize. You'll have 5 minutes in total, 3 minutes for presenting the pitch deck and 2 minutes for the demo. Make sure you prepare the pitch beforehand so that you can rock the stage!
 							            </div>
 							          </div>
 							        </div>
 
-							      
+
 
 							    </div>
 							</div>
@@ -539,7 +555,7 @@
 						</div>
 					</div>
 					<div class="mu-footer-bottom">
-						<p class="mu-copy-right">&copy; Copyright <a rel="nofollow" href="http://markups.io">markups.io</a>. All right reserved.</p>
+					<!--	<p class="mu-copy-right">&copy; Copyright <a rel="nofollow" href="http://markups.io">markups.io</a>. All right reserved.</p> -->
 					</div>
 				</div>
 			</div>
