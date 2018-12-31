@@ -709,7 +709,22 @@ button:focus {
 .mu-event-timeline ul li .mu-single-event span {
 	font-size: 12px;
 }
+/*-------------------*/
+/* Code */
+/*-------------------*/
+#mu-code {
+	background-color: #fff;
+	display: inline;
+	float: left;
+	width: 100%;
+}
 
+.mu-code-area {
+	display: inline;
+	float: left;
+	padding: 100px 0;
+	width: 100%;
+}
 
 /*--------------------*/
 /* SPEAKERS */
